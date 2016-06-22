@@ -1,5 +1,6 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+#include<math.h>
+
 int find(int data[],int n,int loc1,int loc2){
    int j,maxi=0,mini=0,temp1=0,temp2=0;
    for(j=0;j<n;j++){
@@ -22,6 +23,7 @@ int find(int data[],int n,int loc1,int loc2){
         }
     loc1 = temp1;
     loc2 = temp2;
+    printf("counting the first element as 0th position : \n");
     printf("position of largest value : %d , position of second-largest value: %d\n", loc1,loc2);
     return 0;
 }

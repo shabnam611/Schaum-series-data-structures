@@ -1,4 +1,6 @@
-#include<bits/stdc++.h>
+#include<stdio.h>
+#include<math.h>
+
 int divi(int l,int m){
     int a,prime[m+10],i,j,k,flag=0;
     for(a=0;a<(m+10);a++){
