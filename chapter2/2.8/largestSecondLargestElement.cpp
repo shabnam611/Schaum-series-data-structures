@@ -1,5 +1,6 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+
+
 int find(int data[],int n,int loc1,int loc2){
    int j,maxi=0,mini=0,temp1=0,temp2=0;
    for(j=0;j<n;j++){
