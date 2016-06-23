@@ -15,7 +15,7 @@ int RANDOM(int DATA[],int N,int K){
 
     }
     printf("the array is : ");
-    for(a=0;a<=flag;a++){
+    for(a=0;a<N;a++){
         printf(" %d", DATA[a]);
     }
     return 0;
