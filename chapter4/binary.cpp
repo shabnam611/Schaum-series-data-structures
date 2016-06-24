@@ -2,7 +2,7 @@
 #include<math.h>
 //use the comments to understand the code.
 int BINARY(int ARRAY[], int LB, int UB , int ITEM, int LOC){
-    int a,b,c,mid=0;
+    int mid=0;
     mid = (LB+UB)/2;
     int flag = 0;
         while(LB<=UB){
