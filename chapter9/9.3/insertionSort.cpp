@@ -2,16 +2,11 @@
 #include<stdlib.h>
 int INSERTCOUNT(int A[] , int N , int NUMB){
     int maxi = 0 ;
-    int k,temp,l;
-    for (l=1;l<=(N-1);l++){
-    d = c;
-    while ((d> 0)&&(A[d]<A[d-1])) {
-      temp = A[d];
-      A[d]   = A[d-1];
-      A[d-1] = t;
-      d--;
+    int k,temp,l,d,c;
+    for(l=0;l<N;l++){
+
     }
-  }
+
     for(k=1;k<=(N-1);k++){
         printf("%d", A[k]);
     }
