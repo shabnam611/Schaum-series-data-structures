@@ -46,6 +46,7 @@ int main(){
     gets(arr);
     j=strlen(arr);
     int a = 0;
-    INSERTSORT(str,a);
+    a = atoi(arr);
+    INSERTSORT(a,j);
     return 0;
 }
