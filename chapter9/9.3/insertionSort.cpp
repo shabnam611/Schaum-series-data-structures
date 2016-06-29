@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 int INSERTCOUNT(int A[] , int N , int NUMB = 0){
-    int k,temp,l,j , c ;
+    int k,temp,l,j,c ;
     for(l=0;l<N;l++){
             if((l==0)&&(A[l+1]<A[l])){
                NUMB++;
                temp = A[l];
                A[l] = A[l+1];
                A[l+1] = temp;
-               printf("A[l] = %d , A[l-1] = %d\n", A[l],A[l+1]);
+               //printf("A[l] = %d , A[l-1] = %d\n", A[l],A[l+1]);
             }
             else if((l>0)&&(A[l]<A[l-1])){
                     NUMB++;
@@ -22,7 +22,7 @@ int INSERTCOUNT(int A[] , int N , int NUMB = 0){
                     }
                     k--;
                     j--;
-                    printf("A[j] = %d , A[k] = %d , k = %d , j = %d\n", A[j],A[k],k,j);
+                    //printf("A[j] = %d , A[k] = %d , k = %d , j = %d\n", A[j],A[k],k,j);
                 }
                 j=0;
                 k=0;
@@ -42,8 +42,9 @@ int main(){
     printf("enter the length of the array: \n");
     scanf("%d", &i);
     int arr[i];
+    arr[0]=-11111;
     printf("enter the elements of the array: \n");
-    for(j=0;j<i;j++){
+    for(j=1;j<i;j++){
         scanf("%d", &arr[j]);
     }
     INSERTCOUNT(arr,i,com);
