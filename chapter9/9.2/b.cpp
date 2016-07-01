@@ -1,16 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
-int INSERTSORT(int A[] , int N){
+int INSERTCOUNT(int A[] , int N , int NUMB = 0){
     int k,temp,l,j,c ;
     for(l=0;l<N;l++){
             if((l==0)&&(A[l+1]<A[l])){
+               NUMB++;
                temp = A[l];
                A[l] = A[l+1];
                A[l+1] = temp;
                //printf("A[l] = %d , A[l-1] = %d\n", A[l],A[l+1]);
             }
             else if((l>0)&&(A[l]<A[l-1])){
+                    NUMB++;
                     j=l;
                     k=j-1;
                 while((k>=0)&&(j>=1)){
@@ -33,20 +34,19 @@ int INSERTSORT(int A[] , int N){
                printf("%d ", A[c]);
             }
             printf("\n");
-            //printf("the number of comparisons are: %d\n", NUMB);
+            printf("the number of comparisons are: %d\n", NUMB);
             return 0;
 }
 int main(){
-    int i,j,c,d;
+    int i,j,com = 0;
     printf("enter the length of the array: \n");
     scanf("%d", &i);
-    char arr[i],str[i];
-    getchar();
+    int arr[i];
+    arr[0]=-11111;
     printf("enter the elements of the array: \n");
-    gets(arr);
-    j=strlen(arr);
-    int a = 0;
-    a = atoi(arr);
-    INSERTSORT(a,j);
+    for(j=1;j<i;j++){
+        scanf("%d", &arr[j]);
+    }
+    INSERTCOUNT(arr,i,com);
     return 0;
 }
