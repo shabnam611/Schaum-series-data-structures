@@ -43,7 +43,7 @@ int main(){
     scanf("%d", &i);
     int arr[i];
     arr[0]=-11111;
-    printf("enter the elements of the array: \n");
+    printf("enter the elements of the array: \n"); // array starts from position 1 and not from 0,because arr[0] has negative infinity by default
     for(j=1;j<i;j++){
         scanf("%d", &arr[j]);
     }
